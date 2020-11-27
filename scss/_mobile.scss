@@ -21,6 +21,13 @@
             }
         }
     } 
+    header#main-menu{
+        div.menu-btn{
+            div.menu-content{
+                font-size: 1.5rem;
+            }
+        }
+    }
 }
 
 // For Medium Devices
@@ -43,6 +50,13 @@
             margin-left: 5vh;
             i{
                 font-size: 2rem;
+            }
+        }
+    }
+    header#main-menu{
+        div.menu-btn{
+            div.menu-content{
+                font-size: 1.5rem;
             }
         }
     } 
