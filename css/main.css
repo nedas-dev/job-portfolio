@@ -148,7 +148,9 @@ main#home div.icons {
   main#home div.icons {
     margin-left: 5vh; }
     main#home div.icons i {
-      font-size: 2rem; } }
+      font-size: 2rem; }
+  header#main-menu div.menu-btn div.menu-content {
+    font-size: 1.5rem; } }
 
 @media screen and (min-width: 501px) and (max-width: 768px) {
   main#home div.introduction {
@@ -162,7 +164,9 @@ main#home div.icons {
   main#home div.icons {
     margin-left: 5vh; }
     main#home div.icons i {
-      font-size: 2rem; } }
+      font-size: 2rem; }
+  header#main-menu div.menu-btn div.menu-content {
+    font-size: 1.5rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   main#home div.introduction {
