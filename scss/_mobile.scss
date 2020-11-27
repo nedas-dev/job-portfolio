@@ -1,1 +1,88 @@
 // For Small Devices
+@include Sm-devices{
+    main#home{
+
+        div.introduction{
+            margin-left: 5vh;
+            margin-top: 25vh;
+            h1{
+                font-size: 3rem;
+                padding-bottom: 2rem;
+            }
+            h2{
+                font-size:1.3rem;
+            }
+        }
+
+        div.icons{
+            margin-left: 5vh;
+            i{
+                font-size: 2.5rem;
+            }
+        }
+    } 
+}
+
+// For Medium Devices
+@include Md-devices{
+    main#home{
+
+        div.introduction{
+            margin-left: 5vh;
+            margin-top: 25vh;
+            h1{
+                font-size: 4rem;
+                padding-bottom: 2rem;
+            }
+            h2{
+                font-size:2rem;
+            }
+        }
+
+        div.icons{
+            margin-left: 5vh;
+            i{
+                font-size: 3rem;
+            }
+        }
+    } 
+}
+// For Large Devices
+@include Lg-devices{
+    main#home{
+        div.introduction{
+            margin-left: 10vh;
+            margin-top: 30vh;
+            h1{
+
+            }
+        }
+    
+        div.icons{
+            margin-left: 10vh;
+            i{
+                font-size: 4rem;
+            }
+        }
+    } 
+}
+
+// For XLarge Devices
+@include Xl-devices{
+    main#home{
+        div.introduction{
+            margin-left: 20vh;
+            margin-top: 30vh;
+            h1{
+
+            }
+        }
+    
+        div.icons{
+            margin-left: 20vh;
+            i{
+                font-size: 4rem;
+            }
+        }
+    } 
+}

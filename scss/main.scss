@@ -1,5 +1,4 @@
 @import 'config';
-@import 'mobile';
 @import 'menu';
 
 *{
@@ -75,3 +74,5 @@ main#home{
         }
     }
 }
+
+@import 'mobile';
