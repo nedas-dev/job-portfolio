@@ -80,10 +80,11 @@ header#main-menu{
             left: 50%;
             top:50%;
             transform: translate(-50%, -50%);
-            width: 400px;
+            max-width: 400px;
             height: 400px;
+            min-width: 350px;
             z-index: 3;
-            opacity: 0.95;
+            opacity: 0.85;
             border: 3px solid $third-color;
             background: darken($primary-color, 30);
             border-radius: 10px;
