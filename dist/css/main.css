@@ -1,0 +1,136 @@
+header#main-menu div.menu-btn {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 35px;
+  height: 25px; }
+  header#main-menu div.menu-btn .checkbox {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    z-index: 10; }
+    header#main-menu div.menu-btn .checkbox:hover {
+      cursor: pointer; }
+  header#main-menu div.menu-btn .nav-hamburger {
+    position: relative;
+    z-index: 9;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: column; }
+  header#main-menu div.menu-btn .nav-hamburger .lines {
+    background: #fff;
+    height: 20%;
+    border-radius: 2px;
+    transition: all 0.5s ease-out; }
+  header#main-menu div.menu-btn .checkbox:checked + .nav-hamburger .line1 {
+    transform: rotate(-45deg);
+    margin-top: 12px; }
+  header#main-menu div.menu-btn .checkbox:checked + .nav-hamburger .line2 {
+    visibility: hidden;
+    opacity: 0; }
+  header#main-menu div.menu-btn .checkbox:checked + .nav-hamburger .line3 {
+    transform: rotate(45deg);
+    margin-bottom: 12px; }
+  header#main-menu div.menu-btn div.layout-2 {
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5; }
+  header#main-menu div.menu-btn input.checkbox:not(:checked) ~ div.layout-2 {
+    display: none; }
+  header#main-menu div.menu-btn div.menu-content {
+    transition: opacity 0.7s, visibility 0.7s;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    z-index: 3;
+    opacity: 0.95;
+    border: 3px solid #e5989b;
+    background: #222024;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize; }
+    header#main-menu div.menu-btn div.menu-content ul.nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%; }
+      header#main-menu div.menu-btn div.menu-content ul.nav-list a {
+        text-decoration: none;
+        color: #fff; }
+      header#main-menu div.menu-btn div.menu-content ul.nav-list li.nav-item {
+        flex: 1fr; }
+        header#main-menu div.menu-btn div.menu-content ul.nav-list li.nav-item:hover {
+          color: #e5989b; }
+  header#main-menu div.menu-btn input.checkbox:not(:checked) ~ div.menu-content {
+    opacity: 0;
+    visibility: hidden; }
+
+.current {
+  color: #e5989b; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  color: white; }
+  body.bg-image {
+    background-image: url("../images/bg4.jpg");
+    background-attachment: fixed;
+    background-size: cover; }
+    body.bg-image .layout {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #3c3a3a;
+      opacity: 0.85;
+      z-index: -1; }
+
+main#home div.introduction {
+  margin-top: 20vh;
+  margin-left: 20vh; }
+  main#home div.introduction h1, main#home div.introduction h2 {
+    font-weight: 400; }
+  main#home div.introduction h1 {
+    font-size: 6rem;
+    padding-bottom: 1rem; }
+  main#home div.introduction h2 {
+    font-size: 2rem;
+    background: rgba(128, 128, 128, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%; }
+  main#home div.introduction span {
+    color: #e5989b; }
+
+main#home div.icons {
+  margin-top: 5rem;
+  margin-left: 20vh; }
+  main#home div.icons i {
+    margin: 0 10px;
+    color: #e5989b; }
+    main#home div.icons i:hover {
+      color: #b5838d; }
