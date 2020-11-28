@@ -136,6 +136,17 @@ main#home div.icons {
     main#home div.icons i:hover {
       color: #b5838d; }
 
+main#contact div.contact-info {
+  display: inline-block;
+  margin: 100px 10px 0px 50px;
+  border: 3px solid #b5838d;
+  padding: 20px;
+  border-radius: 10px; }
+  main#contact div.contact-info.extra {
+    margin: 10px 10px 0px 50px; }
+  main#contact div.contact-info:hover {
+    background: #454444; }
+
 @media screen and (max-width: 500px) {
   main#home div.introduction {
     margin-left: 5vh;
@@ -150,7 +161,10 @@ main#home div.icons {
     main#home div.icons i {
       font-size: 2rem; }
   header#main-menu div.menu-btn div.menu-content {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  main#contact div.contact-info {
+    margin-top: 25vh;
+    font-size: 0.8rem; } }
 
 @media screen and (min-width: 501px) and (max-width: 768px) {
   main#home div.introduction {
@@ -166,7 +180,11 @@ main#home div.icons {
     main#home div.icons i {
       font-size: 2rem; }
   header#main-menu div.menu-btn div.menu-content {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  main#contact div.contact-info {
+    margin-top: 25vh;
+    font-size: 1rem;
+    margin-bottom: 5vh; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   main#home div.introduction {
@@ -175,7 +193,11 @@ main#home div.icons {
   main#home div.icons {
     margin-left: 10vh; }
     main#home div.icons i {
-      font-size: 3rem; } }
+      font-size: 3rem; }
+  main#contact div.contact-info {
+    margin-top: 25vh;
+    font-size: 1.2rem;
+    margin-bottom: 5vh; } }
 
 @media screen and (min-width: 1171px) {
   main#home div.introduction {
@@ -184,4 +206,8 @@ main#home div.icons {
   main#home div.icons {
     margin-left: 20vh; }
     main#home div.icons i {
-      font-size: 3rem; } }
+      font-size: 3rem; }
+  main#contact div.contact-info {
+    margin-top: 25vh;
+    font-size: 1.3rem;
+    margin-bottom: 5vh; } }
