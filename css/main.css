@@ -61,7 +61,7 @@ header#main-menu div.menu-btn {
     z-index: 3;
     opacity: 0.85;
     border: 3px solid #a8dadc;
-    background: #222024;
+    background: black;
     border-radius: 10px;
     font-size: 2rem;
     font-weight: 500;
@@ -109,6 +109,10 @@ body {
       background-color: #3c3a3a;
       opacity: 0.85;
       z-index: -1; }
+    body.bg-image.extra-image {
+      background-image: url("../images/bg5.jpg"); }
+    body.bg-image .no-layout {
+      display: none; }
 
 main#home div.introduction {
   margin-top: 20vh;
@@ -149,7 +153,7 @@ main#contact div.contact-info {
 
 main#about {
   overflow: hidden;
-  font-size: 0.8rem; }
+  font-size: 0.7rem; }
   main#about div.wrapper {
     margin: 100px;
     display: grid;
@@ -175,6 +179,9 @@ main#about {
       z-index: -1;
       border: 1px solid #a8dadc;
       line-height: 2rem;
+      letter-spacing: 0.1rem;
+      text-align: justify;
+      text-justify: newspaper;
       overflow: hidden;
       border-radius: 10px; }
       main#about div.wrapper div.about-me h3 {
@@ -183,18 +190,46 @@ main#about {
         font-size: 2rem;
         color: #a8dadc; }
       main#about div.wrapper div.about-me p {
+        text-indent: 1.6rem;
         padding: 20px 10px 20px 10px;
         margin: 0px 10px 20px 10px;
         font-size: 1.2rem;
-        background: #47444d;
+        background: #3b3a3a;
         opacity: 0.76;
         border-radius: 10px; }
 
+main#projects {
+  margin: 100px; }
+  main#projects div.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    justify-content: space-evenly;
+    justify-items: center; }
+    main#projects div.wrapper div.project-item {
+      padding: 10px;
+      border: 1px solid #a8dadc;
+      border-radius: 5px;
+      background: #6c6c68; }
+      main#projects div.wrapper div.project-item img {
+        width: 200px;
+        border-bottom: 3px solid #a8dadc; }
+      main#projects div.wrapper div.project-item div.description {
+        padding: 5px;
+        text-align: center; }
+        main#projects div.wrapper div.project-item div.description div.buttons {
+          padding: 7px; }
+          main#projects div.wrapper div.project-item div.description div.buttons a {
+            text-decoration: none;
+            color: #a8dadc;
+            font-size: 2rem; }
+          main#projects div.wrapper div.project-item div.description div.buttons .grey {
+            color: #fff;
+            margin-left: 35px; }
+      main#projects div.wrapper div.project-item:hover {
+        background: #3b3a3a; }
+
 @media screen and (max-width: 500px) {
-  body.extra-image {
-    background-image: url("../images/bg5.jpg"); }
-  .no-layout {
-    display: none; }
   main#home div.introduction {
     margin-left: 5vh;
     margin-top: 25vh; }
@@ -219,7 +254,9 @@ main#about {
     grid-template-rows: 220px auto;
     justify-content: center;
     grid-gap: 50px;
-    grid-template-areas: "image" "content"; } }
+    grid-template-areas: "image" "content"; }
+  main#projects div.wrapper {
+    grid-template-columns: 1fr; } }
 
 @media screen and (min-width: 501px) and (max-width: 768px) {
   body.extra-image {
@@ -250,7 +287,9 @@ main#about {
     grid-template-rows: 220px auto;
     justify-content: center;
     grid-gap: 50px;
-    grid-template-areas: "image image image" ". content ."; } }
+    grid-template-areas: "image image image" ". content ."; }
+  main#projects div.wrapper {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   body.extra-image {
@@ -274,7 +313,9 @@ main#about {
     grid-template-rows: 220px auto;
     justify-content: center;
     grid-gap: 50px;
-    grid-template-areas: "image image image" ". content ."; } }
+    grid-template-areas: "image image image" ". content ."; }
+  main#projects div.wrapper {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (min-width: 1171px) {
   main#home div.introduction {
