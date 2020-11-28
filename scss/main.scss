@@ -27,6 +27,13 @@ body{
             opacity: 0.85;
             z-index: -1;
         }
+
+        &.extra-image{
+            background-image: url('../images/bg5.jpg');
+        }
+        .no-layout{
+            display:none;
+        }
     }
 }
 
@@ -95,7 +102,7 @@ main#contact{
 
 main#about{
     overflow: hidden;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     div.wrapper{
         margin: 100px;
         display: grid;
@@ -125,8 +132,13 @@ main#about{
             z-index: -1;
             border: 1px solid $third-color;
             line-height: 2rem;
+            letter-spacing: 0.1rem;
+            text-align: justify;
+            text-justify: newspaper;
+            
             overflow: hidden;
             border-radius:10px;
+
             h3{
                 text-align: center;
                 padding: 15px;
@@ -134,15 +146,62 @@ main#about{
                 color: $third-color;
             }
             p{
+                text-indent: 1.6rem;
                 padding: 20px 10px 20px 10px;
                 margin: 0px 10px 20px 10px;
                 font-size: 1.2rem;
-                background: darken($primary-color, 15);
+                background: $primary-color;
                 opacity: 0.76;
                 border-radius: 10px;
             }
         }
 
+    }
+}
+
+main#projects{
+    margin:100px;
+
+    div.wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 50px;
+        justify-content: space-evenly;
+        justify-items: center;
+        
+        div.project-item{
+            padding:10px;
+            border: 1px solid $third-color;
+            border-radius: 5px;
+            background: rgb(108, 108, 104);
+
+            img{
+                width:200px;
+                border-bottom: 3px solid $third-color;
+            }
+
+            div.description{
+                padding: 5px;
+                text-align: center;
+                div.buttons{
+                    padding: 7px;
+                    a{
+                        text-decoration: none;
+                        color: $third-color;
+                        font-size: 2rem;              
+                    }
+
+                    .grey{
+                        color: #fff;
+                        margin-left: 35px;
+                    }
+                }
+            }
+
+            &:hover{
+                background: $primary-color;
+            }
+        }
     }
 }
 

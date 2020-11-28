@@ -1,11 +1,5 @@
 // For Small Devices
 @include Sm-devices{
-    body.extra-image{
-        background-image: url('../images/bg5.jpg');
-    }
-    .no-layout{
-        display:none;
-    }
     main#home{
 
         div.introduction{
@@ -57,7 +51,12 @@
             "image"
             "content";
         }
+    }
 
+    main#projects{
+        div.wrapper{
+            grid-template-columns: 1fr;
+        }
     }
 }
 
@@ -119,6 +118,11 @@
         }
 
     }
+    main#projects{
+        div.wrapper{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 }
 // For Large Devices
 @include Lg-devices{
@@ -163,6 +167,11 @@
             ". content .";
         }
 
+    }
+    main#projects{
+        div.wrapper{
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }
 
