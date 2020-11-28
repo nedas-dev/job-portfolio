@@ -60,7 +60,7 @@ header#main-menu div.menu-btn {
     min-width: 350px;
     z-index: 3;
     opacity: 0.85;
-    border: 3px solid #e5989b;
+    border: 3px solid #a8dadc;
     background: #222024;
     border-radius: 10px;
     font-size: 2rem;
@@ -79,13 +79,13 @@ header#main-menu div.menu-btn {
       header#main-menu div.menu-btn div.menu-content ul.nav-list li.nav-item {
         flex: 1fr; }
         header#main-menu div.menu-btn div.menu-content ul.nav-list li.nav-item:hover {
-          color: #e5989b; }
+          color: #a8dadc; }
   header#main-menu div.menu-btn input.checkbox:not(:checked) ~ div.menu-content {
     opacity: 0;
     visibility: hidden; }
 
 .current {
-  color: #e5989b; }
+  color: #a8dadc; }
 
 * {
   margin: 0;
@@ -125,21 +125,21 @@ main#home div.introduction {
     border-radius: 10px;
     width: 90%; }
   main#home div.introduction span {
-    color: #e5989b; }
+    color: #a8dadc; }
 
 main#home div.icons {
   margin-top: 5rem;
   margin-left: 20vh; }
   main#home div.icons i {
     margin: 0 10px;
-    color: #e5989b; }
+    color: #a8dadc; }
     main#home div.icons i:hover {
-      color: #b5838d; }
+      color: #457b9d; }
 
 main#contact div.contact-info {
   display: inline-block;
   margin: 100px 10px 0px 50px;
-  border: 3px solid #b5838d;
+  border: 3px solid #457b9d;
   padding: 20px;
   border-radius: 10px; }
   main#contact div.contact-info.extra {
@@ -147,7 +147,54 @@ main#contact div.contact-info {
   main#contact div.contact-info:hover {
     background: #454444; }
 
+main#about {
+  overflow: hidden;
+  font-size: 0.8rem; }
+  main#about div.wrapper {
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 240px 50px 1fr 50px;
+    grid-template-rows: 240px;
+    grid-template-areas: "image . content . ";
+    overflow: hidden;
+    grid-gap: 30px; }
+    main#about div.wrapper div.image-container {
+      grid-area: image;
+      z-index: -1; }
+      main#about div.wrapper div.image-container div.image {
+        margin: auto;
+        width: 240px;
+        height: 240px;
+        background-image: url("../images/portrait.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        border: 3px solid #a8dadc; }
+    main#about div.wrapper div.about-me {
+      grid-area: content;
+      z-index: -1;
+      border: 1px solid #a8dadc;
+      line-height: 2rem;
+      overflow: hidden;
+      border-radius: 10px; }
+      main#about div.wrapper div.about-me h3 {
+        text-align: center;
+        padding: 15px;
+        font-size: 2rem;
+        color: #a8dadc; }
+      main#about div.wrapper div.about-me p {
+        padding: 20px 10px 20px 10px;
+        margin: 0px 10px 20px 10px;
+        font-size: 1.2rem;
+        background: #47444d;
+        opacity: 0.76;
+        border-radius: 10px; }
+
 @media screen and (max-width: 500px) {
+  body.extra-image {
+    background-image: url("../images/bg5.jpg"); }
+  .no-layout {
+    display: none; }
   main#home div.introduction {
     margin-left: 5vh;
     margin-top: 25vh; }
@@ -165,9 +212,20 @@ main#contact div.contact-info {
   main#contact div.contact-info {
     margin-top: 25vh;
     font-size: 0.7rem;
-    margin-bottom: 5vh; } }
+    margin-bottom: 5vh; }
+  main#about div.wrapper {
+    margin: 100px 30px 10px 30px;
+    grid-template-columns: auto;
+    grid-template-rows: 220px auto;
+    justify-content: center;
+    grid-gap: 50px;
+    grid-template-areas: "image" "content"; } }
 
 @media screen and (min-width: 501px) and (max-width: 768px) {
+  body.extra-image {
+    background-image: url("../images/bg5.jpg"); }
+  .no-layout {
+    display: none; }
   main#home div.introduction {
     margin-left: 5vh;
     margin-top: 25vh; }
@@ -185,9 +243,20 @@ main#contact div.contact-info {
   main#contact div.contact-info {
     margin-top: 25vh;
     font-size: 1rem;
-    margin-bottom: 5vh; } }
+    margin-bottom: 5vh; }
+  main#about div.wrapper {
+    margin: 100px 30px 10px 30px;
+    grid-template-columns: 20px auto 20px;
+    grid-template-rows: 220px auto;
+    justify-content: center;
+    grid-gap: 50px;
+    grid-template-areas: "image image image" ". content ."; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  body.extra-image {
+    background-image: url("../images/bg5.jpg"); }
+  .no-layout {
+    display: none; }
   main#home div.introduction {
     margin-left: 10vh;
     margin-top: 30vh; }
@@ -198,7 +267,14 @@ main#contact div.contact-info {
   main#contact div.contact-info {
     margin-top: 25vh;
     font-size: 1.2rem;
-    margin-bottom: 5vh; } }
+    margin-bottom: 5vh; }
+  main#about div.wrapper {
+    margin: 100px 30px 10px 30px;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: 220px auto;
+    justify-content: center;
+    grid-gap: 50px;
+    grid-template-areas: "image image image" ". content ."; } }
 
 @media screen and (min-width: 1171px) {
   main#home div.introduction {

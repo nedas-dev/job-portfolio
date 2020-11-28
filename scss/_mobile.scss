@@ -1,5 +1,11 @@
 // For Small Devices
 @include Sm-devices{
+    body.extra-image{
+        background-image: url('../images/bg5.jpg');
+    }
+    .no-layout{
+        display:none;
+    }
     main#home{
 
         div.introduction{
@@ -36,10 +42,33 @@
             margin-bottom: 5vh;
         }
     }
+    
+    
+
+    main#about{
+        
+        div.wrapper{
+            margin: 100px 30px 10px 30px;
+            grid-template-columns: auto;
+            grid-template-rows: 220px auto;
+            justify-content: center;
+            grid-gap: 50px;
+            grid-template-areas:
+            "image"
+            "content";
+        }
+
+    }
 }
 
 // For Medium Devices
 @include Md-devices{
+    body.extra-image{
+        background-image: url('../images/bg5.jpg');
+    }
+    .no-layout{
+        display:none;
+    }
     main#home{
 
         div.introduction{
@@ -75,9 +104,31 @@
             margin-bottom: 5vh;
         }
     }
+
+    main#about{
+        
+        div.wrapper{
+            margin: 100px 30px 10px 30px;
+            grid-template-columns: 20px auto 20px;
+            grid-template-rows: 220px auto;
+            justify-content: center;
+            grid-gap: 50px;
+            grid-template-areas:
+            "image image image"
+            ". content .";
+        }
+
+    }
 }
 // For Large Devices
 @include Lg-devices{
+    body.extra-image{
+        background-image: url('../images/bg5.jpg');
+    }
+    .no-layout{
+        display:none;
+    }
+
     main#home{
         div.introduction{
             margin-left: 10vh;
@@ -98,6 +149,21 @@
             margin-bottom: 5vh;
         }
     } 
+
+    main#about{
+        
+        div.wrapper{
+            margin: 100px 30px 10px 30px;
+            grid-template-columns: 50px auto 50px;
+            grid-template-rows: 220px auto;
+            justify-content: center;
+            grid-gap: 50px;
+            grid-template-areas:
+            "image image image"
+            ". content .";
+        }
+
+    }
 }
 
 // For XLarge Devices

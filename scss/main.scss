@@ -93,4 +93,57 @@ main#contact{
     }
 }
 
+main#about{
+    overflow: hidden;
+    font-size: 0.8rem;
+    div.wrapper{
+        margin: 100px;
+        display: grid;
+        grid-template-columns: 240px 50px 1fr 50px;
+        grid-template-rows: 240px;
+        grid-template-areas: 
+        "image . content . ";
+        overflow: hidden;
+        grid-gap: 30px;
+        div.image-container{
+            grid-area:image;
+            div.image{
+                margin:auto;
+                width: 240px;
+                height: 240px;
+                background-image: url("../images/portrait.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 50%;
+                border: 3px solid $third-color;
+            }
+            z-index: -1;
+        }
+
+        div.about-me{
+            grid-area: content;
+            z-index: -1;
+            border: 1px solid $third-color;
+            line-height: 2rem;
+            overflow: hidden;
+            border-radius:10px;
+            h3{
+                text-align: center;
+                padding: 15px;
+                font-size: 2rem;
+                color: $third-color;
+            }
+            p{
+                padding: 20px 10px 20px 10px;
+                margin: 0px 10px 20px 10px;
+                font-size: 1.2rem;
+                background: darken($primary-color, 15);
+                opacity: 0.76;
+                border-radius: 10px;
+            }
+        }
+
+    }
+}
+
 @import 'mobile';
