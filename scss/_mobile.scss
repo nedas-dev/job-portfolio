@@ -30,10 +30,34 @@
     }
 
     main#contact{
+        width:95%;
+        margin:auto;
         div.contact-info{
-            margin-top: 25vh;
             font-size: 0.7rem;
-            margin-bottom: 5vh;
+            i.map-icon{
+                font-size: 1rem;
+            }
+
+            &.extra{
+                margin-top: 100px;
+                margin-bottom: 30px;
+            }
+
+            div.text{
+                h2{
+                    font-size: 1rem;
+                }
+            }
+
+            a{
+                h2{
+                    font-size: 1rem;
+                    span{
+                        font-size: 1rem;
+                    }
+                }
+            }
+
         }
     }
     
@@ -69,9 +93,40 @@
         }
 
         fieldset{
+            width: 90%;
             div.icons{
                 grid-template-columns: repeat(3, 1fr);
+                grid-template-areas:
+                "item1 item2 item3"
+                "item4 . item5";
                 
+                div.item1{
+                    grid-area: item1;
+                    img{
+                        width: 70px;
+                    }
+                }
+                div.item2{
+                    grid-area: item2;
+                    img{
+                        width: 70px;
+                    }
+                }
+                
+                div.item3{
+                    grid-area: item3;
+                    font-size: 1rem;
+                }
+                div.item4{
+                    grid-area: item4;
+                    font-size: 1rem;
+                }
+                
+                div.item5{
+                    grid-area: item5;
+                    font-size: 1rem;
+                }
+
             }
 
             legend{
@@ -126,10 +181,12 @@
     } 
     main#contact{
         div.contact-info{
-            margin-top: 25vh;
-            font-size: 1rem;
-            margin-bottom: 5vh;
+
+            i.map-icon{
+                font-size: 1.5rem;
+            }
         }
+
     }
 
     main#about{
@@ -158,6 +215,27 @@
         fieldset{
             div.icons{
                 grid-template-columns: repeat(3, 1fr);
+                grid-template-areas:
+                "item1 item2 item3"
+                "item4 . item5";
+                
+                div.item1{
+                    grid-area: item1;
+                }
+                div.item2{
+                    grid-area: item2;
+                }
+                
+                div.item3{
+                    grid-area: item3;
+                }
+                div.item4{
+                    grid-area: item4;
+                }
+                
+                div.item5{
+                    grid-area: item5;
+                }
             }
 
             legend{
@@ -191,13 +269,7 @@
                 font-size: 3rem;
             }
         }
-    }
-    main#contact{
-        div.contact-info{
-            margin-top: 25vh;
-            font-size: 1.2rem;
-            margin-bottom: 5vh;
-        }
+    
     } 
 
     main#about{
@@ -246,11 +318,4 @@
             }
         }
     }
-    main#contact{
-        div.contact-info{
-            margin-top: 25vh;
-            font-size: 1.3rem;
-            margin-bottom: 5vh;
-        }
-    }  
 }
