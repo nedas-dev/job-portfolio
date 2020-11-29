@@ -32,6 +32,8 @@ body{
 
 // Homepage
 main#home{
+    max-width: 1200px;
+    margin:auto;
     div.introduction{
         margin-top: 20vh;
         margin-left: 20vh;
@@ -78,12 +80,13 @@ main#home{
 main#contact{
     width:80%;
     margin:auto;
+    max-width: 800px;
     div.contact-info{
         position: relative;
         z-index: 1;
         display:block;
         margin: auto;
-        border: 3px solid $secondary-color;
+        border: 3px solid $third-color;
         padding: 20px;
         border-radius: 10px;
         font-size: 0.9rem;
@@ -205,7 +208,7 @@ main#about{
             line-height: 1.6rem;
             letter-spacing: 0.1rem;
             overflow: hidden;
-            border-radius:10px;
+            border-radius:5px;
 
             h3{
                 color: #fff;
@@ -295,7 +298,7 @@ main#projects{
         
         div.project-item{
             padding:10px;
-            border: 1px solid $third-color;
+            border: 2px solid $third-color;
             border-radius: 5px;
             background: rgb(108, 108, 104);
 
