@@ -134,41 +134,44 @@ body {
       opacity: 0.85;
       z-index: -1; }
 
-main#home div.introduction {
-  margin-top: 20vh;
-  margin-left: 20vh; }
-  main#home div.introduction h1, main#home div.introduction h2 {
-    font-weight: 400; }
-  main#home div.introduction h1 {
-    font-size: 6rem;
-    padding-bottom: 1rem; }
-  main#home div.introduction h2 {
-    font-size: 2rem;
-    background: rgba(128, 128, 128, 0.5);
-    padding: 15px;
-    border-radius: 10px;
-    width: 90%; }
-  main#home div.introduction span {
-    color: #a8dadc; }
-
-main#home div.icons {
-  margin-top: 5rem;
-  margin-left: 20vh; }
-  main#home div.icons i {
-    margin: 0 10px;
-    color: #a8dadc; }
-    main#home div.icons i:hover {
-      color: #457b9d; }
+main#home {
+  max-width: 1200px;
+  margin: auto; }
+  main#home div.introduction {
+    margin-top: 20vh;
+    margin-left: 20vh; }
+    main#home div.introduction h1, main#home div.introduction h2 {
+      font-weight: 400; }
+    main#home div.introduction h1 {
+      font-size: 6rem;
+      padding-bottom: 1rem; }
+    main#home div.introduction h2 {
+      font-size: 2rem;
+      background: rgba(128, 128, 128, 0.5);
+      padding: 15px;
+      border-radius: 10px;
+      width: 90%; }
+    main#home div.introduction span {
+      color: #a8dadc; }
+  main#home div.icons {
+    margin-top: 5rem;
+    margin-left: 20vh; }
+    main#home div.icons i {
+      margin: 0 10px;
+      color: #a8dadc; }
+      main#home div.icons i:hover {
+        color: #457b9d; }
 
 main#contact {
   width: 80%;
-  margin: auto; }
+  margin: auto;
+  max-width: 800px; }
   main#contact div.contact-info {
     position: relative;
     z-index: 1;
     display: block;
     margin: auto;
-    border: 3px solid #457b9d;
+    border: 3px solid #a8dadc;
     padding: 20px;
     border-radius: 10px;
     font-size: 0.9rem; }
@@ -256,7 +259,7 @@ main#about {
       line-height: 1.6rem;
       letter-spacing: 0.1rem;
       overflow: hidden;
-      border-radius: 10px; }
+      border-radius: 5px; }
       main#about div.wrapper div.about-me h3 {
         color: #fff;
         font-size: 1.4rem;
@@ -320,7 +323,7 @@ main#projects {
     justify-items: center; }
     main#projects div.wrapper div.project-item {
       padding: 10px;
-      border: 1px solid #a8dadc;
+      border: 2px solid #a8dadc;
       border-radius: 5px;
       background: #6c6c68; }
       main#projects div.wrapper div.project-item img {
