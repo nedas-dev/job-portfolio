@@ -212,8 +212,16 @@ main#about {
       main#about fieldset div.icons div.icon {
         font-size: 1.5rem;
         padding: 10px; }
-    main#about fieldset div.tehno h1, main#about fieldset div.tehno h2 {
-      color: #a8dadc; }
+    main#about fieldset legend {
+      margin: auto; }
+    main#about fieldset div.tehno {
+      border: 2px solid #a8dadc;
+      border-width: 2px 1px 2px 1px;
+      border-color: #a8dadc #fff #a8dadc #fff;
+      padding: 3px 10px; }
+      main#about fieldset div.tehno h1, main#about fieldset div.tehno h2 {
+        color: #a8dadc;
+        font-size: 1.2rem; }
   main#about div.random {
     margin-top: 100px; }
 
@@ -281,6 +289,8 @@ main#projects {
       height: 200px; }
   main#about fieldset div.icons {
     grid-template-columns: repeat(3, 1fr); }
+  main#about fieldset legend div.tehno h1 {
+    font-size: 0.9rem; }
   main#projects div.wrapper {
     grid-template-columns: 1fr; } }
 
@@ -312,6 +322,8 @@ main#projects {
     grid-template-areas: "image image image" ". content ."; }
   main#about fieldset div.icons {
     grid-template-columns: repeat(3, 1fr); }
+  main#about fieldset legend div.tehno h1 {
+    font-size: 16px; }
   main#projects div.wrapper {
     grid-template-columns: repeat(2, 1fr); } }
 
