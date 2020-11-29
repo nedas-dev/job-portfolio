@@ -148,6 +148,8 @@ main#contact div.contact-info {
     background: #454444; }
 
 main#about {
+  max-width: 1200px;
+  margin: auto;
   overflow: hidden;
   font-size: 0.7rem; }
   main#about div.wrapper {
@@ -162,10 +164,11 @@ main#about {
       grid-area: image;
       z-index: -1; }
       main#about div.wrapper div.image-container div.image {
+        justify-self: center;
         margin: auto;
         width: 240px;
         height: 240px;
-        background-image: url("../images/portrait.jpg");
+        background-image: url("../images/profile2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 50%;
@@ -174,10 +177,8 @@ main#about {
       grid-area: content;
       z-index: -1;
       border: 1px solid #a8dadc;
-      line-height: 2rem;
+      line-height: 1.6rem;
       letter-spacing: 0.1rem;
-      text-align: justify;
-      text-justify: newspaper;
       overflow: hidden;
       border-radius: 10px; }
       main#about div.wrapper div.about-me h3 {
@@ -193,10 +194,34 @@ main#about {
         background: #3b3a3a;
         opacity: 0.76;
         border-radius: 10px; }
+  main#about fieldset {
+    margin: 50px auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #555353; }
+    main#about fieldset div.icons {
+      display: grid;
+      margin: auto;
+      width: 100%;
+      grid-template-columns: repeat(5, 1fr);
+      justify-items: center;
+      padding: 30px; }
+      main#about fieldset div.icons div.svg img {
+        height: 5rem; }
+      main#about fieldset div.icons div.icon {
+        font-size: 1.5rem;
+        padding: 10px; }
+    main#about fieldset div.tehno h1, main#about fieldset div.tehno h2 {
+      color: #a8dadc; }
+  main#about div.random {
+    margin-top: 100px; }
 
 main#projects {
-  margin: 100px; }
+  margin: 100px auto;
+  max-width: 1200px; }
   main#projects div.wrapper {
+    margin: 0px 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
@@ -247,10 +272,15 @@ main#projects {
   main#about div.wrapper {
     margin: 100px 30px 10px 30px;
     grid-template-columns: auto;
-    grid-template-rows: 220px auto;
+    grid-template-rows: 200px auto;
     justify-content: center;
     grid-gap: 50px;
     grid-template-areas: "image" "content"; }
+    main#about div.wrapper div.image-container div.image {
+      width: 200px;
+      height: 200px; }
+  main#about fieldset div.icons {
+    grid-template-columns: repeat(3, 1fr); }
   main#projects div.wrapper {
     grid-template-columns: 1fr; } }
 
@@ -280,6 +310,8 @@ main#projects {
     justify-content: center;
     grid-gap: 50px;
     grid-template-areas: "image image image" ". content ."; }
+  main#about fieldset div.icons {
+    grid-template-columns: repeat(3, 1fr); }
   main#projects div.wrapper {
     grid-template-columns: repeat(2, 1fr); } }
 
@@ -295,13 +327,16 @@ main#projects {
     margin-top: 25vh;
     font-size: 1.2rem;
     margin-bottom: 5vh; }
-  main#about div.wrapper {
-    margin: 100px 30px 10px 30px;
-    grid-template-columns: 50px auto 50px;
-    grid-template-rows: 220px auto;
-    justify-content: center;
-    grid-gap: 50px;
-    grid-template-areas: "image image image" ". content ."; }
+  main#about {
+    font-size: 0.5rem; }
+    main#about div.wrapper {
+      margin: 100px 50px 50px 50px;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      justify-content: center;
+      align-items: center;
+      grid-gap: 20px;
+      grid-template-areas: "image content content"; }
   main#projects div.wrapper {
     grid-template-columns: repeat(3, 1fr); } }
 
