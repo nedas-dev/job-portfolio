@@ -62,12 +62,6 @@
 
 // For Medium Devices
 @include Md-devices{
-    body.extra-image{
-        background-image: url('../images/bg5.jpg');
-    }
-    .no-layout{
-        display:none;
-    }
     main#home{
 
         div.introduction{
@@ -126,12 +120,6 @@
 }
 // For Large Devices
 @include Lg-devices{
-    body.extra-image{
-        background-image: url('../images/bg5.jpg');
-    }
-    .no-layout{
-        display:none;
-    }
 
     main#home{
         div.introduction{

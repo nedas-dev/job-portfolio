@@ -97,7 +97,7 @@ body {
   height: 100%;
   color: white; }
   body.bg-image {
-    background-image: url("../images/bg4.jpg");
+    background-image: url("../images/bg5.jpg");
     background-attachment: fixed;
     background-size: cover; }
     body.bg-image .layout {
@@ -109,10 +109,6 @@ body {
       background-color: #3c3a3a;
       opacity: 0.85;
       z-index: -1; }
-    body.bg-image.extra-image {
-      background-image: url("../images/bg5.jpg"); }
-    body.bg-image .no-layout {
-      display: none; }
 
 main#home div.introduction {
   margin-top: 20vh;
@@ -259,10 +255,6 @@ main#projects {
     grid-template-columns: 1fr; } }
 
 @media screen and (min-width: 501px) and (max-width: 768px) {
-  body.extra-image {
-    background-image: url("../images/bg5.jpg"); }
-  .no-layout {
-    display: none; }
   main#home div.introduction {
     margin-left: 5vh;
     margin-top: 25vh; }
@@ -292,10 +284,6 @@ main#projects {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-  body.extra-image {
-    background-image: url("../images/bg5.jpg"); }
-  .no-layout {
-    display: none; }
   main#home div.introduction {
     margin-left: 10vh;
     margin-top: 30vh; }
