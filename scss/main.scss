@@ -94,6 +94,9 @@ main#contact{
 }
 
 main#about{
+    max-width: 1200px;
+    margin: auto;
+
     overflow: hidden;
     font-size: 0.7rem;
     div.wrapper{
@@ -106,14 +109,15 @@ main#about{
         overflow: hidden;
         grid-gap: 30px;
         div.image-container{
-            grid-area:image;
+            grid-area: image;
             div.image{
+                justify-self: center;
                 margin:auto;
                 width: 240px;
                 height: 240px;
-                background-image: url("../images/portrait.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
+                background-image: url("../images/profile2.jpg");
+                background-repeat: no-repeat; 
+                background-size: cover;    
                 border-radius: 50%;
                 border: 3px solid $third-color;
             }
@@ -124,11 +128,8 @@ main#about{
             grid-area: content;
             z-index: -1;
             border: 1px solid $third-color;
-            line-height: 2rem;
+            line-height: 1.6rem;
             letter-spacing: 0.1rem;
-            text-align: justify;
-            text-justify: newspaper;
-            
             overflow: hidden;
             border-radius:10px;
 
@@ -150,12 +151,51 @@ main#about{
         }
 
     }
+
+    fieldset{
+        margin: 50px auto;
+        padding: 0;
+        width:90%;
+        max-width: 1200px;
+        background-color: lighten($primary-color, 10);
+
+        div.icons{
+            display:grid;
+            margin: auto;
+            width: 100%;
+            grid-template-columns: repeat(5, 1fr);
+            justify-items: center;
+            padding: 30px;
+            div.svg{
+                img{
+                    height: 5rem;
+                }
+            }
+    
+            div.icon{
+                font-size: 1.5rem;
+                padding:10px;
+            }
+        }
+
+        div.tehno{
+            h1, h2{
+                color: $third-color;
+                }
+            }
+    }
+
+    div.random{
+        margin-top:100px;
+    }
 }
 
 main#projects{
-    margin:100px;
+    margin:100px auto;
+    max-width:1200px;
 
     div.wrapper{
+        margin: 0px 50px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 50px;
