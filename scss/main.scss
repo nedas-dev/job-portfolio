@@ -178,9 +178,18 @@ main#about{
             }
         }
 
+        legend{
+            margin:auto;
+        }
+
         div.tehno{
+            border: 2px solid $third-color;
+            border-width: 2px 1px 2px 1px;
+            border-color: $third-color #fff $third-color #fff;
+            padding: 3px 10px;
             h1, h2{
                 color: $third-color;
+                font-size: 1.2rem;
                 }
             }
     }
