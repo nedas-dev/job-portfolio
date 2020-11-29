@@ -26,22 +26,24 @@ header#main-menu{
             height:100%;
             display:flex;
             flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
             justify-content: space-between;
             flex-direction: column;
+            -ms-flex-direction: column;
     
         }
     
         .nav-hamburger .lines{
             background:#fff;
             height:20%;
-            border-radius: 2px;;
-            transition: all 0.5s ease-out;
+            border-radius: 2px;
+            @include transition(all 0.5s ease-out);
         }
     
         .checkbox:checked + .nav-hamburger{
 
             .line1{
-                transform: rotate(-45deg);
+                @include transform(rotate(-45deg));
                 margin-top:12px;
             }
     
@@ -51,14 +53,14 @@ header#main-menu{
             }
     
             .line3{
-                transform: rotate(45deg);
+                @include transform(rotate(45deg))
                 margin-bottom: 12px;
             }
     
         }
 
         div.layout-2{
-            transition: all 0.3s ease-in-out;
+            @include transition(all 0.3s ease-in-out);
             position: fixed;
             z-index: 2;
             top:0;
@@ -75,11 +77,11 @@ header#main-menu{
 
     
         div.menu-content{
-            transition: opacity 0.7s, visibility 0.7s;
+            @include transition((opacity 0.7s, visibility 0.7s));
             position: fixed;
             left: 50%;
             top:50%;
-            transform: translate(-50%, -50%);
+            @include transform(translate(-50%, -50%))
             max-width: 400px;
             height: 400px;
             min-width: 350px;

@@ -96,22 +96,21 @@ main#contact{
 main#about{
     max-width: 1200px;
     margin: auto;
-
     overflow: hidden;
-    font-size: 0.7rem;
     div.wrapper{
         margin: 100px;
         display: grid;
         grid-template-columns: 240px 50px 1fr 50px;
-        grid-template-rows: 240px;
+        grid-template-rows: auto;
         grid-template-areas: 
         "image . content . ";
         overflow: hidden;
         grid-gap: 30px;
+        justify-content: center;
+        align-items: center;
         div.image-container{
             grid-area: image;
             div.image{
-                justify-self: center;
                 margin:auto;
                 width: 240px;
                 height: 240px;
@@ -134,12 +133,15 @@ main#about{
             border-radius:10px;
 
             h3{
+                color: #fff;
+                font-size: 1.4rem;
+                font-weight: 600;
                 text-align: center;
-                padding: 15px;
-                font-size: 2rem;
-                color: $third-color;
+                padding: 10px;
+                margin-top: 20px;
             }
             p{
+                color: #fff;
                 text-indent: 1.6rem;
                 padding: 20px 10px 20px 10px;
                 margin: 0px 10px 20px 10px;
@@ -153,7 +155,7 @@ main#about{
     }
 
     fieldset{
-        margin: 50px auto;
+        margin: 20px auto;
         padding: 0;
         width:90%;
         max-width: 1200px;
@@ -188,9 +190,10 @@ main#about{
             h1, h2{
                 color: #fff;
                 font-size: 1.2rem;
-                font-weight: 500;
+                font-weight: 600;
                 letter-spacing: 0.1rem;
                 }
+
             }
     }
 

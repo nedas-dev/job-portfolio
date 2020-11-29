@@ -27,3 +27,18 @@ $bg-image: url('../images/bg5.jpg');
         @content;
     }
 }
+
+@mixin transition($value){
+    transition: $value;
+    -moz-transition: $value;
+    -webkit-transition: $value;
+    -o-transition: $value;
+}
+
+@mixin transform($value){
+    transform: $value;
+    -moz-transform: $value;
+    -ms-transform: $value;
+    -webkit-transform: $value;
+    -o-transform: $value;
+}
