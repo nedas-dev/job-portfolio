@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Job Portfolio Website",
   "main": "index.js",
-  "homepage": "https://nedukas1998.github.io/job-portfolio",
+  "homepage": "https://nedas-dev.github.io/job-portfolio",
   "dependencies": {
     "node.js": "^0.0.1-security",
     "node-sass": "^5.0.0"
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://nedukas1998.github.io/job-portfolio"
+    "url": "http://nedas-dev.github.io/job-portfolio"
   },
   "author": "Nedas Snarskis",
   "license": "MIT"
