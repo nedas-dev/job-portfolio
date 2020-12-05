@@ -1,5 +1,5 @@
 # job-portfolio
-Job Portfolio Website
+Job Portfolio Website (HTML, CSS, SASS)
 
 If you want to visit my Job Portfolio Website: <a href="https://www.nedas.dev" target="_blank">nedas.dev</a>
 
