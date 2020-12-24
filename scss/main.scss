@@ -90,7 +90,7 @@ main#contact{
         padding: 20px;
         border-radius: 10px;
         font-size: 0.9rem;
-        
+        cursor: pointer;
         h2{
             font-size: 1.6rem;
         }
@@ -106,27 +106,6 @@ main#contact{
             margin-bottom: 0px;
         }
 
-        input{
-            position: absolute;
-            top:0;
-            left:0;
-            width:100%;
-            height:100%;
-            z-index: 1;
-            opacity: 0;
-
-            &:hover{
-                cursor: pointer;
-            }
-        }
-
-        & > input.checkbox1:checked ~ div.map{
-            display:block;
-        }
-
-        & > input.checkbox1:checked{
-            z-index:-1;
-        }
         div.map{
             display:none;
             position: relative;

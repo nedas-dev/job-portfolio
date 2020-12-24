@@ -12,4 +12,12 @@ $(document).ready(function () {
             $('.line3').css('transform', 'translate(0px, 0px) rotate(0deg)');
         };
     });
+
+    $('.location').click(function () {
+        if ($('#map').css('display') == 'none') {
+            $('#map').css('display', 'block');
+        } else {
+            $('#map').css('display', 'none')
+        }
+    })
 });

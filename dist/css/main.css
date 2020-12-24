@@ -126,7 +126,8 @@ main#contact {
     border: 3px solid #a8dadc;
     padding: 20px;
     border-radius: 10px;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    cursor: pointer; }
     main#contact div.contact-info h2 {
       font-size: 1.6rem; }
     main#contact div.contact-info i.map-icon {
@@ -136,20 +137,6 @@ main#contact {
     main#contact div.contact-info.extra {
       margin-top: 100px;
       margin-bottom: 0px; }
-    main#contact div.contact-info input {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      opacity: 0; }
-      main#contact div.contact-info input:hover {
-        cursor: pointer; }
-    main#contact div.contact-info > input.checkbox1:checked ~ div.map {
-      display: block; }
-    main#contact div.contact-info > input.checkbox1:checked {
-      z-index: -1; }
     main#contact div.contact-info div.map {
       display: none;
       position: relative;
