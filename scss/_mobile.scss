@@ -13,13 +13,6 @@
                 font-size:1.3rem;
             }
         }
-
-        div.icons{
-            margin-left: 5vh;
-            i{
-                font-size: 2rem;
-            }
-        }
     } 
     header#main-menu{
         div.menu-btn{
@@ -93,42 +86,6 @@
         }
 
         fieldset{
-            width: 90%;
-            div.icons{
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-areas:
-                "item1 item2 item3"
-                "item4 . item5";
-                
-                div.item1{
-                    grid-area: item1;
-                    img{
-                        width: 70px;
-                    }
-                }
-                div.item2{
-                    grid-area: item2;
-                    img{
-                        width: 70px;
-                    }
-                }
-                
-                div.item3{
-                    grid-area: item3;
-                    font-size: 1rem;
-                }
-                div.item4{
-                    grid-area: item4;
-                    font-size: 1rem;
-                }
-                
-                div.item5{
-                    grid-area: item5;
-                    font-size: 1rem;
-                }
-
-            }
-
             legend{
                 div.tehno{
                     h1{
@@ -165,12 +122,6 @@
             }
         }
 
-        div.icons{
-            margin-left: 5vh;
-            i{
-                font-size: 2rem;
-            }
-        }
     }
     header#main-menu{
         div.menu-btn{
@@ -213,31 +164,6 @@
 
 
         fieldset{
-            div.icons{
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-areas:
-                "item1 item2 item3"
-                "item4 . item5";
-                
-                div.item1{
-                    grid-area: item1;
-                }
-                div.item2{
-                    grid-area: item2;
-                }
-                
-                div.item3{
-                    grid-area: item3;
-                }
-                div.item4{
-                    grid-area: item4;
-                }
-                
-                div.item5{
-                    grid-area: item5;
-                }
-            }
-
             legend{
                 div.tehno{
                     h1{
@@ -262,14 +188,6 @@
             margin-left: 10vh;
             margin-top: 30vh;
         }
-    
-        div.icons{
-            margin-left: 10vh;
-            i{
-                font-size: 3rem;
-            }
-        }
-    
     } 
 
     main#about{
@@ -311,11 +229,5 @@
             margin-top: 30vh;
         }
      
-        div.icons{
-            margin-left: 20vh;
-            i{
-                font-size: 3rem;
-            }
-        }
     }
 }

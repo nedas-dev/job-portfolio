@@ -217,27 +217,28 @@ main#about{
 
     fieldset{
         margin: 20px auto;
-        padding: 0;
+        padding: 30px 15px;
         width:90%;
         max-width: 1200px;
         background-color: lighten($primary-color, 10);
 
         div.icons{
-            display:grid;
-            margin: auto;
-            width: 100%;
-            grid-template-columns: repeat(5, 1fr);
-            justify-items: center;
-            padding: 30px;
-            div.svg{
-                img{
-                    height: 5rem;
-                }
-            }
-
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
             div.icon{
-                font-size: 1.5rem;
-                padding:10px;
+                
+                img{
+                    height: 80px;
+                    width: 80px;
+                    margin: 10px 20px;
+                }
+
+                i{
+                    font-size: 80px;
+                    margin: 10px 20px;
+                }
             }
         }
 
