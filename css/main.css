@@ -221,22 +221,22 @@ main#about {
         line-height: 1.6rem; }
   main#about fieldset {
     margin: 20px auto;
-    padding: 0;
+    padding: 30px 15px;
     width: 90%;
     max-width: 1200px;
     background-color: #555353; }
     main#about fieldset div.icons {
-      display: grid;
-      margin: auto;
-      width: 100%;
-      grid-template-columns: repeat(5, 1fr);
-      justify-items: center;
-      padding: 30px; }
-      main#about fieldset div.icons div.svg img {
-        height: 5rem; }
-      main#about fieldset div.icons div.icon {
-        font-size: 1.5rem;
-        padding: 10px; }
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around; }
+      main#about fieldset div.icons div.icon img {
+        height: 80px;
+        width: 80px;
+        margin: 10px 20px; }
+      main#about fieldset div.icons div.icon i {
+        font-size: 80px;
+        margin: 10px 20px; }
     main#about fieldset legend {
       margin: auto; }
     main#about fieldset div.tehno {
@@ -306,10 +306,6 @@ main#projects {
       padding-bottom: 1.8rem; }
     main#home div.introduction h2 {
       font-size: 1.3rem; }
-  main#home div.icons {
-    margin-left: 5vh; }
-    main#home div.icons i {
-      font-size: 2rem; }
   header#main-menu div.menu-btn div.menu-content {
     font-size: 1.5rem; }
   main#contact {
@@ -342,30 +338,8 @@ main#projects {
       font-size: 1.4rem; }
     main#about div.wrapper div.about-me p {
       font-size: 1rem; }
-  main#about fieldset {
-    width: 90%; }
-    main#about fieldset div.icons {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: "item1 item2 item3" "item4 . item5"; }
-      main#about fieldset div.icons div.item1 {
-        grid-area: item1; }
-        main#about fieldset div.icons div.item1 img {
-          width: 70px; }
-      main#about fieldset div.icons div.item2 {
-        grid-area: item2; }
-        main#about fieldset div.icons div.item2 img {
-          width: 70px; }
-      main#about fieldset div.icons div.item3 {
-        grid-area: item3;
-        font-size: 1rem; }
-      main#about fieldset div.icons div.item4 {
-        grid-area: item4;
-        font-size: 1rem; }
-      main#about fieldset div.icons div.item5 {
-        grid-area: item5;
-        font-size: 1rem; }
-    main#about fieldset legend div.tehno h1 {
-      font-size: 0.9rem; }
+  main#about fieldset legend div.tehno h1 {
+    font-size: 0.9rem; }
   main#projects div.wrapper {
     grid-template-columns: 1fr; } }
 
@@ -377,10 +351,6 @@ main#projects {
       font-size: 3rem;
       padding-bottom: 2rem; }
     main#home div.introduction h2 {
-      font-size: 2rem; }
-  main#home div.icons {
-    margin-left: 5vh; }
-    main#home div.icons i {
       font-size: 2rem; }
   header#main-menu div.menu-btn div.menu-content {
     font-size: 1.5rem; }
@@ -399,19 +369,6 @@ main#projects {
         font-size: 1.4rem; }
       main#about div.wrapper div.about-me p {
         font-size: 1rem; }
-    main#about fieldset div.icons {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: "item1 item2 item3" "item4 . item5"; }
-      main#about fieldset div.icons div.item1 {
-        grid-area: item1; }
-      main#about fieldset div.icons div.item2 {
-        grid-area: item2; }
-      main#about fieldset div.icons div.item3 {
-        grid-area: item3; }
-      main#about fieldset div.icons div.item4 {
-        grid-area: item4; }
-      main#about fieldset div.icons div.item5 {
-        grid-area: item5; }
     main#about fieldset legend div.tehno h1 {
       font-size: 16px; }
   main#projects div.wrapper {
@@ -421,10 +378,6 @@ main#projects {
   main#home div.introduction {
     margin-left: 10vh;
     margin-top: 30vh; }
-  main#home div.icons {
-    margin-left: 10vh; }
-    main#home div.icons i {
-      font-size: 3rem; }
   main#about {
     font-size: 0.5rem; }
     main#about div.wrapper {
@@ -445,8 +398,4 @@ main#projects {
 @media screen and (min-width: 1171px) {
   main#home div.introduction {
     margin-left: 20vh;
-    margin-top: 30vh; }
-  main#home div.icons {
-    margin-left: 20vh; }
-    main#home div.icons i {
-      font-size: 3rem; } }
+    margin-top: 30vh; } }
