@@ -306,6 +306,10 @@ main#projects {
       padding-bottom: 1.8rem; }
     main#home div.introduction h2 {
       font-size: 1.3rem; }
+  main#home div.icons {
+    margin-left: 3rem; }
+    main#home div.icons i {
+      font-size: 2.3rem; }
   header#main-menu div.menu-btn div.menu-content {
     font-size: 1.5rem; }
   main#contact {
@@ -352,6 +356,8 @@ main#projects {
       padding-bottom: 2rem; }
     main#home div.introduction h2 {
       font-size: 2rem; }
+  main#home div.icons {
+    margin-left: 3rem; }
   header#main-menu div.menu-btn div.menu-content {
     font-size: 1.5rem; }
   main#contact div.contact-info i.map-icon {
@@ -378,6 +384,8 @@ main#projects {
   main#home div.introduction {
     margin-left: 10vh;
     margin-top: 30vh; }
+  main#home div.icons {
+    margin-left: 6rem; }
   main#about {
     font-size: 0.5rem; }
     main#about div.wrapper {

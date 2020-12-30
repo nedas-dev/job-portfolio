@@ -13,6 +13,12 @@
                 font-size:1.3rem;
             }
         }
+        div.icons{
+            margin-left: 3rem;
+            i{
+                font-size: 2.3rem;
+            }
+        }
     } 
     header#main-menu{
         div.menu-btn{
@@ -121,7 +127,9 @@
                 font-size:2rem;
             }
         }
-
+                div.icons{
+            margin-left: 3rem;
+        }
     }
     header#main-menu{
         div.menu-btn{
@@ -187,6 +195,9 @@
         div.introduction{
             margin-left: 10vh;
             margin-top: 30vh;
+        }
+        div.icons{
+            margin-left: 6rem;
         }
     } 
 
