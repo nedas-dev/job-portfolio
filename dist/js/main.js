@@ -21,3 +21,5 @@ $(document).ready(function () {
         }
     })
 });
+
+// need to rewrite in vanilla js
